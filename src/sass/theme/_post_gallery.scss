@@ -1,0 +1,47 @@
+// Arranges the Post mosaic display
+
+.mosaic {
+    columns: 2 200px;
+    gap: 40px 40px;
+    div {
+      width: 150px;
+      // background: #EC985A;
+      // color: white;
+      margin: 20px 0rem 0rem 0;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    } 
+    @for $i from 1 through 36 { 
+      div:nth-child(#{$i}) {
+        // $h: (random(400) + 100) + px;
+        $h: auto;
+        height: $h;
+        // line-height: $h;
+      }
+    }
+  }
+
+.mosaic-caption {
+    color: $light;
+}
+
+.mosaic-item {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+     -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          // box-shadow: 10px 10px 6px -6px #777;
+}
+
+.artist {
+  font-size: 0.7em;
+}
+
+// remove outline from carousel icons
+.carousel-control-next-icon::after {
+	display: none;
+}
+
+.carousel-control-prev-icon::after {
+	display: none;
+}
