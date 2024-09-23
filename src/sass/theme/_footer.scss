@@ -1,0 +1,313 @@
+/* // page footer
+.site-footer  {
+    font-size: calc(0.7rem + 0.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    .site-footer  {
+      font-size: 1rem;
+    }
+  }
+
+.site-footer a {
+    box-shadow: inset 0 0 0 0 $secondary;
+    color: $secondary;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.site-footer a:hover {
+    box-shadow: inset 130px 0 0 0 $secondary;
+    color: white;
+} */
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .site-footer {
+        padding: var(--sectionPadding);
+        padding-bottom: 3.125rem;
+    }
+    .site-footer .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer .cs-logo-wrapper {
+        width: 100%;
+    }
+    .site-footer .cs-logo {
+        width: 100%;
+        max-width: 13.125rem;
+        height: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .site-footer .cs-logo img {
+        width: 100%;
+        height: auto;
+    }
+    .site-footer .cs-top {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* 64px - 100px */
+        column-gap: clamp(4rem, 9vw, 6.25rem);
+        row-gap: 2rem;
+    }
+    .site-footer .cs-ul {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        flex: none;
+    }
+    .site-footer .cs-contact-ul {
+        /* we remove the :before animated underline from the contact list and replace it with an underline.  The animated line doesn't work well on this section */
+        width: 100%;
+        max-width: 100%;
+        gap: 0.75rem;
+    }
+    .site-footer .cs-contact-ul .cs-link:hover {
+        text-decoration: underline;
+    }
+    .site-footer .cs-contact-ul .cs-link:before {
+        display: none;
+    }
+    .site-footer .cs-li {
+        list-style: none;
+        margin: 0;
+        display: block;
+    }
+    .site-footer .cs-header {
+        font-size: 1rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 1.5rem 0;
+        color: var(--headerColor);
+        display: block;
+    }
+    .site-footer .cs-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+    .site-footer .cs-link:hover:before {
+        width: 100%;
+    }
+    .site-footer .cs-link:before {
+        /* on hover underline */
+        content: "";
+        width: 0%;
+        height: 1px;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s;
+    }
+    .site-footer .cs-block {
+        display: block;
+    }
+    .site-footer .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        margin: -0.0625rem 0.75rem 0 0;
+    }
+    .site-footer .cs-middle {
+        width: 100%;
+        /* changes at tablet */
+        max-width: 28.125rem;
+        /* 60px - 100px */
+        margin: clamp(3.75rem, 8vw, 6.25rem) 0 0 0;
+        /* 24px - 40px */
+        padding-bottom: clamp(1.25rem, 5vw, 2.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .site-footer .cs-nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.5rem;
+        row-gap: 0.5rem;
+    }
+    .site-footer .cs-nav-li {
+        list-style: none;
+    }
+    .site-footer .cs-nav-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        margin: 0;
+        color: var(--bodyTextColor);
+        position: relative;
+    }
+    .site-footer .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    .site-footer .cs-nav-link:before {
+        /* on hover underline */
+        content: "";
+        width: 0%;
+        height: 1px;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s;
+    }
+    .site-footer .cs-social {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: clamp(1.25rem, 5vw, 2.5rem) 0 0 0;
+        border-top: 1px solid rgba(186, 186, 186, 0.2);
+    }
+    .site-footer .cs-social-li {
+        list-style: none;
+    }
+    .site-footer .cs-social-link {
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        border: 1px solid var(--bodyTextColor);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+    .site-footer .cs-social-link:hover {
+        background-color: var(--bodyTextColor);
+    }
+    .site-footer .cs-social-link:hover .cs-social-icon {
+        filter: grayscale(1) brightness(2000%);
+    }
+    .site-footer .cs-social-icon {
+        width: 1.5rem;
+        height: auto;
+        display: block;
+    }
+    .site-footer .cs-hover {
+        display: none;
+    }
+    .site-footer .cs-bottom {
+        width: 100%;
+        margin: 0;
+        /* 24px - 40px, matches the cs-middle padding bottom */
+        padding: clamp(1.25rem, 5vw, 1.5rem) 0 0 0;
+        // border-top: 1px solid rgba(186, 186, 186, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-footer .cs-copyright {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 70%;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+    .site-footer .cs-copyright-link {
+        font-size: inherit;
+        line-height: inherit;
+        text-decoration: none;
+        margin: 0;
+        color: inherit;
+        display: inline-block;
+    }
+    .site-footer .cs-copyright-link:hover {
+        text-decoration: underline;
+    }
+}
+/* inbetween - 600px */
+@media only screen and (min-width: 37.5rem) {
+    .site-footer .cs-top {
+        justify-content: flex-end;
+    }
+    .site-footer .cs-ul {
+        width: auto;
+    }
+    .site-footer .cs-contact-ul {
+        width: 15rem;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    .site-footer .cs-top {
+        flex-wrap: nowrap;
+    }
+    .site-footer .cs-logo-wrapper {
+        width: auto;
+        margin-right: auto;
+    }
+    .site-footer .cs-middle {
+        max-width: 100%;
+    }
+}
+/* Small Desktop 1024px */
+@media only screen and (min-width: 64rem) {
+    .site-footer .cs-middle {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode .site-footer {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    body.dark-mode .site-footer .cs-header,
+    body.dark-mode .site-footer .cs-link,
+    body.dark-mode .site-footer .cs-social-link,
+    body.dark-mode .site-footer .cs-nav-link,
+    body.dark-mode .site-footer .cs-copyright {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode .site-footer .cs-social-link {
+        border-color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode .site-footer .cs-social-icon,
+    body.dark-mode .site-footer .cs-icon,
+    body.dark-mode .site-footer .cs-logo {
+        filter: grayscale(1) brightness(1000%);
+    }
+}
+                                

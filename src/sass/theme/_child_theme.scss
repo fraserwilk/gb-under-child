@@ -10,18 +10,6 @@ p {
     font-weight: 300;
 }
 
-// thin green line above/below navbar
-#main-nav {
-	border-top: solid $secondary 1px;
-    border-bottom: solid $secondary 1px;
-    color: #fff;
-}
-
-// main menu text colour
-#main-menu li a {
-	color: #ffffff;
-}
-
 // dropdown menu colour
 #navbarNavDropdown ul .dropdown-menu li a {
 	color: #000;
@@ -37,28 +25,9 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 .navbar-nav .dropdown-toggle .caret { display:none; }
 
 
-// page footer
-.site-footer  {
-    font-size: calc(0.7rem + 0.3vw);
-  }
-  
-  @media (min-width: 1200px) {
-    .site-footer  {
-      font-size: 1rem;
-    }
-  }
-
-.site-footer a {
-    box-shadow: inset 0 0 0 0 $secondary;
-    color: $secondary;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-.site-footer a:hover {
-    box-shadow: inset 130px 0 0 0 $secondary;
-    color: white;
+.wrapper#full-width-page-wrapper, .wrapper#single-wrapper {
+  min-height: 80vh;
+  padding-top: 5%;
 }
 
 // card styling
@@ -81,4 +50,8 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 
 .gb-post-list img {
 	border: solid #000 1px;
+}
+
+.navbar-brand {
+	width: 2.5rem;
 }

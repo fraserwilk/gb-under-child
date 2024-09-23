@@ -12,15 +12,15 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
 
-	<!-- <div class="<?php echo esc_attr( $container ); ?>"> -->
-	<div class="container">
+	<div class="<?php echo esc_attr( $container ); ?>">
+	<!-- <div class="container"> -->
 
 		<!-- GBAA site branding in the menu -->
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		>
 			<!-- <span class="navbar-toggler-icon"></span> -->
 			<!-- using an svg as hamburger -->
-			<svg viewBox="0 0 100 80" width="40" height="40" fill="#FFFFFF">
+			<svg viewBox="0 0 100 80" width="40" height="40" fill="rgb(105,170,156,100)">
 				<rect width="100" height="12" rx="4"></rect>
 				<rect y="30" width="100" height="12" rx="4"></rect>
 				<rect y="60" width="100" height="12" rx="4"></rect>
@@ -48,9 +48,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		wp_nav_menu(
 			array(
 				'theme_location'  => 'primary',
-				'container_class' => 'collapse navbar-collapse justify-content-center',
+				'container_class' => 'collapse navbar-collapse justify-content-end',
 				'container_id'    => 'navbarNavDropdown',
-				'menu_class'      => 'navbar-nav text-end text-light',
+				'menu_class'      => 'navbar-nav text-end',
 				'fallback_cb'     => '',
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,

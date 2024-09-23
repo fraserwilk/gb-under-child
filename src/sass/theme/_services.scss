@@ -1,0 +1,155 @@
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .post-2815 {
+    padding: var(--sectionPadding);
+    // background-color: #F7F7F7;
+    position: relative;
+  }
+  .post-2815 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  .post-2815 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  .post-2815 .cs-title {
+    max-width: 12ch;
+    color: var(--headerColor);
+  }
+  .post-2815 .cs-text {
+    color: var(--bodyTextColor);
+  }
+  .post-2815 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.25rem);
+    row-gap: 2rem;
+  }
+  .post-2815 .cs-item {
+    list-style: none;
+    width: 100%;
+    grid-column: span 12;
+  }
+  .post-2815 .cs-item:hover .cs-picture img {
+    opacity: .3;
+    transform: scale(1.2);
+  }
+  .post-2815 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  .post-2815 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* we use flexbox here to grow the link to fit the whole item, making it clickable everywhere, no matter the size */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 12px - 20px */
+    gap: clamp(0.75rem, 1.6vw, 1.25rem);
+    position: relative;
+    z-index: 1;
+  }
+  .post-2815 .cs-picture {
+    width: 100%;
+    /* 300px - 380px */
+    height: clamp(12.5rem, 33vw, 26.25rem);
+    background-color: #000;
+    display: block;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .post-2815 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform ease-in-out 0.5s, opacity 0.3s;
+  }
+  .post-2815 .cs-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .post-2815 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: $primary;
+    transition: color 0.3s;
+  }
+  .post-2815 .cs-arrow {
+    width: 1.5rem;
+    height: auto;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .post-2815 .cs-container {
+    max-width: 80rem;
+  }
+  .post-2815 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .post-2815 .cs-title {
+    margin: 0;
+  }
+  .post-2815 .cs-text {
+    width: 50%;
+  }
+  .post-2815 .cs-item {
+    grid-column: span 3;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode .post-2815 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode .post-2815 .cs-title,
+  body.dark-mode .post-2815 .cs-text,
+  body.dark-mode .post-2815 .cs-h3 {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode .post-2815 .cs-picture {
+    background-color: var(--primary);
+  }
+  body.dark-mode .post-2815 .cs-text {
+    opacity: .8;
+  }
+}
+                                

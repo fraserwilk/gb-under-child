@@ -6,11 +6,14 @@
 $primary: rgb(105,170,156,100);  // GBAA brand colour.
 $secondary: #69AA9C; // GBAA's green colour
 $white:    #fff !default;
+$gbaa-green-faded: #E1EEEB; // GBAA's faded green colour for card backgrounds
 
 $font-family-base: 'Open Sans', sans-serif;
 $headings-font-family: 'Ace Sans', sans-serif;
 
-$gbaa-green-faded: #E1EEEB; // GBAA's faded green colour for card backgrounds
+
 
 $border-color: $gbaa-green-faded;
+
+$font-weight-normal:          300;
 

@@ -1,0 +1,22 @@
+#post-66, #post-69 {
+
+    .collections-list {
+        
+        li {
+            margin: 0 0.1rem 0.5rem 0;
+
+            a {
+            color: $black;
+            text-decoration: none;
+            }
+        }
+    }
+}
+
+
+    /* hr style */
+    hr.gb-style {
+        margin: 2rem -6rem 2rem;
+        border: 0;
+        border-top: 2px solid $primary;
+    }

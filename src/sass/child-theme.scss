@@ -6,7 +6,7 @@
 // @import "assets/understrap/theme/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
 
 // Optional files - If you don´t use the corresponding scripts/fonts comment em out
-@import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
+// @import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
 @import "assets/underscores";                            // <------- Underscores media styles
 
 // Any additional imported files //
@@ -14,6 +14,10 @@
 @import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
 @import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
 
-// @import url('https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css');  // <------ mhttps://mdbootstrap.com/
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css');  // <------ https://mdbootstrap.com/
 
 @import "theme/archive";  // <------- layout for archives
+@import "theme/homepage"; // <------- home page layout
+@import "theme/collections"; // <------- collections page layout
+@import "theme/footer"; // <------- footer styles
+@import "theme/services";
