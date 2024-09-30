@@ -1,7 +1,5 @@
 #post-66, #post-69 {
-
     .collections-list {
-        
         li {
             margin: 0 0.1rem 0.5rem 0;
 
@@ -13,10 +11,48 @@
     }
 }
 
-
     /* hr style */
     hr.gb-style {
         margin: 2rem -6rem 2rem;
         border: 0;
         border-top: 2px solid $primary;
     }
+
+    .collections-image {
+        position: relative;
+        padding-top: 4rem;
+      }
+
+      .collections-image:before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 80%;
+        margin-left: -2rem;
+        margin-right: auto;
+        // max-width: 1280px;
+        margin-top:-32px;
+        padding: 8rem 8% 0rem;
+        background-color: rgb(105,170,156,25%);
+        z-index: -1;
+      }
+
+      .collections-box {
+        position:relative;
+          width:100%;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1280px;
+          margin-top:-120px;
+          padding: 8rem 8% 4rem;
+          z-index:-999;
+      }
+      
+      .collections-box-text {
+          width: 80%;
+        max-width: 1280px;
+          margin: 0 auto;
+        font-size: 1.125rem;
+        text-wrap: pretty;
+      }
+      

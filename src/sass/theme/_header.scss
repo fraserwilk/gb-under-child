@@ -1,0 +1,19 @@
+#main-menu {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $dark;
+}
+
+.dropdown-menu {
+    border: none;
+    text-align: end;
+    text-transform: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
